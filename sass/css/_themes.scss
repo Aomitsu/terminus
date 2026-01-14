@@ -103,4 +103,13 @@
         --accent-color: #89b4fa;
         --footnote-color: rgba(186, 194, 222, 0.7);
     }
+    // Cyberpunk Neon
+    // By https://github.com/Roboron3042/Cyberpunk-Neon/blob/master/terminal/kitty/cyberpunk-neon.conf
+    &:has(body[data-theme="cyberpunk-neon"]) {
+        --background-color: #000b1e;
+        --text-color: #0abdc6;
+        --accent-color: #d300c4; 
+        --footnote-color: #1c61c2;
+    }
+
 }
