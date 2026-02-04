@@ -11,5 +11,8 @@
         {%- endif %}
         <li><a href="{{ url | safe }}" {%- if item.new_tab %} target="_blank" {%- endif -%}>{{ item.name }}</a></li>
         {%- endfor %}
+        {% for lang_code, lang_config in config.languages %}
+        <li><a href="{{ get_url(path="@/_index.md", lang=lang_code) }}" {%- if item.new_tab %} target="_blank" {%- endif -%}>{{ lang_code | upper }}</a></li>
+        {% endfor %}
     </ul>
 </nav>
